@@ -19,7 +19,7 @@ class PostSeeder extends Seeder
     {
         for($i = 0; $i < 20; $i++){
             $new_project = new Post();
-            $new_project->name=$faker->name($gender = null|'male'|'female');
+            $new_project->name=$faker->name();
             $new_project->price=$faker->randomNumber(2.2);
             $new_project->descrition=$faker->text();
             $new_project->type=$faker->company();
